@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Bookingstyle.css">
+</head>
+<body>
+-  <form class="trip-form">
+    <h2>Trip Booking</h2>
+    
+     <label for="place">Place</label>
+    <select id="place" name="place" required>
+      <option value="">-- Select Place --</option>
+      <option value="bali">BALI</option>
+      <option value="Dubai">DUBAI</option>
+      <option value="Italy">ITALY</option>
+      <option value="Maldives">MALDIVES</option>
+      <option value="Japan">JAPAN</option>
+      <option value="NewYork">NEW YORK</option>
+      <option value="Russia">RUSSIA</option>
+      <option value="Thaiand">THAILAND</option>
+    </select>
+
+    <label for="startdate">Starting Date</label>
+    <input type="date" id="startdate" name="startdate" required>
+
+    <label for="enddate">Ending Date</label>
+    <input type="date" id="enddate" name="enddate" required>
+
+    <label for="persons">Total Persons</label>
+    <input type="number" id="persons" name="persons" placeholder="Enter number" required>
+
+    <button type="submit">Check Availability</button>
+  </form>
+ 
+  
+   <script src="Bookingfunc.js"></script>
+</body>
+</html>
